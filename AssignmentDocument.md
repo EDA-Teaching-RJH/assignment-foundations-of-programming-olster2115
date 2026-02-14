@@ -274,7 +274,7 @@ Using the Snipping Tool (for Any Screen Area)
 -   **QuickTime Player :**
     -   Open QuickTime Player, then choose  `File`  >  `New Movie Recording`.
     -   Click the arrow next to the record button to select microphone, and quality settings
-        
+        p
         
     
     -   Click the record button to start, and again to stop.
