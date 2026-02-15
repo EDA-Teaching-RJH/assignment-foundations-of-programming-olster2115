@@ -6,7 +6,7 @@ def main():
         ID = ["1","2" ,"3" ,"4" ,"5"]
         
         def init_database (N:list[str],R:list[str],D:list[str],ID:list[str]):
-                print(N,R, D ,ID)
+                print(N,R,D,ID)
                 return 
                         
         init_database()
@@ -38,13 +38,25 @@ def main():
                 if R not in R:
                         print("rank does not exist")
                         return
-                N.append(input(""))
-                R.append(input(""))
-                D.append(input(""))
-                ID.append(input("")) 
+                N.append(N)
+                R.append(R)
+                D.append(D)
+                ID.append(ID) 
                 
                 return
         add_members()
        
+        def remove_member(N:list[str],R:list[str],D:list[str],ID:list[str]):
+                N = input("Name to remove")
+                database = N.index
+                N.pop(database)
+                R.pop(database)   
+                D.pop(database)
+                ID.pop(database)
+                
+                return        
+        remove_member()
+
+
 
 main()
