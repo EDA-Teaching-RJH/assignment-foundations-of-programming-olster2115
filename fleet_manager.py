@@ -1,11 +1,11 @@
-def main():
+def main(N:list[str],R:list[str],D:list[str],ID:list[str]):
 
         N = ["Michael Burnham" , "Saru" , "Hugh Culber" , "Paul Stamets" ,"Sylvia Tilly"]
         R = ["Captain" , "Lt Commander"  , "Doctor" , "Commander" ,"lieutenant"]
         D = ["Command","Command" ,"Medical" ,"Engineering","Engineering"]
         ID = ["1","2" ,"3" ,"4" ,"5"]
         
-        def init_database (N:list[str],R:list[str],D:list[str],ID:list[str]):
+        def init_database(N:list[str],R:list[str],D:list[str],ID:list[str]):
                 print(N,R,D,ID)
                 return 
                         
@@ -57,6 +57,11 @@ def main():
                 return        
         remove_member()
 
-
-
+        def update_rank(N:list[str],R:list[str],D:list[str],ID:list[str]):
+                IDF = ID.find(input(""))
+                print(IDF)
+                R.append(R)
+                return
+        update_rank()
+        
 main()
