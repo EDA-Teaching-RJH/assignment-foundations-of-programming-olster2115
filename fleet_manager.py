@@ -5,12 +5,12 @@ def main(N:list[str],R:list[str],D:list[str],ID:list[str]):
         D = ["Command","Command" ,"Medical" ,"Engineering","Engineering"]
         ID = ["1","2" ,"3" ,"4" ,"5"]
         
-        def init_database(N:list[str],R:list[str],D:list[str],ID:list[str]):
+        def init_database(N,R,D,ID):
                 print(N,R,D,ID)
                 return 
                         
         init_database()
-        def display_menu(N:list[str],R:list[str],D:list[str],ID:list[str]):
+        def display_menu():
                 print("Add Members:")
                 print("Remove Members:")
                 print("Update Members:")
@@ -23,7 +23,7 @@ def main(N:list[str],R:list[str],D:list[str],ID:list[str]):
                 return 
         display_menu()                            
         
-        def add_members(N:list[str],R:list[str],D:list[str],ID:list[str]):
+        def add_members():
                 print("add member")
                 N = input("")
                 print("add rank")
@@ -46,7 +46,7 @@ def main(N:list[str],R:list[str],D:list[str],ID:list[str]):
                 return
         add_members()
        
-        def remove_member(N:list[str],R:list[str],D:list[str],ID:list[str]):
+        def remove_member():
                 N = input("Name to remove")
                 database = N.index
                 N.pop(database)
@@ -63,5 +63,32 @@ def main(N:list[str],R:list[str],D:list[str],ID:list[str]):
                 R.append(R)
                 return
         update_rank()
-        
+        def display_roster():
+
+                for L in range(len(N)):
+                        print(N[L]+ ""+ R[L]+ ""+ D[L] +""+ ID[L] +"")
+                
+                return
+        display_roster()
+        def search_crew():
+
+                return
+        search_crew()
+        def filter_by_divisions():
+
+                return
+        filter_by_divisions()
+        def calculate_payroll():
+
+
+
+                return
+        calculate_payroll()
+        def count_officers():
+                if R 
+                count = 0 
+                count + 1 
+                print("senior officers" + str(count))
+                return
+        count_officers()
 main()
